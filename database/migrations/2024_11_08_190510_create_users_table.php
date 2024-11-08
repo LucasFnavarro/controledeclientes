@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('password', 200)->nullable();
             $table->string('telefone')->nullable();
             $table->string('endereco', 100)->nullable();
+            $table->dateTime('last_login')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

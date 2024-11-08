@@ -19,7 +19,8 @@ class CreateUsersSeeder extends Seeder
                 'email' => 'lucas@gmail.com',
                 'password' => bcrypt('abc123'),
                 'telefone' => '3199887766',
-                'endereco' => 'Rua Brasil 123'
+                'endereco' => 'Rua Brasil 123',
+                'last_login' => date('Y-m-d H:i:s')
             ],
 
             [
@@ -27,7 +28,8 @@ class CreateUsersSeeder extends Seeder
                 'email' => 'jao@gmail.com',
                 'password' => bcrypt('abc123'),
                 'telefone' => '4399778552',
-                'endereco' => 'Rua Maranhão 987'
+                'endereco' => 'Rua Maranhão 987',
+                'last_login' => date('Y-m-d H:i:s')
             ],
 
             [
@@ -35,7 +37,8 @@ class CreateUsersSeeder extends Seeder
                 'email' => 'fernanda@gmail.com',
                 'password' => bcrypt('abc123'),
                 'telefone' => '2199885544',
-                'endereco' => 'Rua Sao Paulo 6542'
+                'endereco' => 'Rua Sao Paulo 6542',
+                'last_login' => date('Y-m-d H:i:s')
             ]
         ]);
     }

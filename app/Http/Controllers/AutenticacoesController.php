@@ -42,6 +42,23 @@ class AutenticacoesController extends Controller
             return redirect()->back()->withInput()->with('loginError', 'Usuário e/ou senha incorretos');
         }
 
+        $user->last_login = date('Y-m-d H:i:s');
+        $user->save();
+
+        session([
+            'user' => [
+                'id' => $user->id,
+                'username' => $user->email
+            ]
+        ]);
+
         return redirect()->route('home');
+    }
+
+
+    public function logout()
+    {
+        session()->forget('user');
+        return redirect()->route('login');
     }
 }
