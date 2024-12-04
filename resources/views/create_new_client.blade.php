@@ -2,14 +2,14 @@
 @section('content')
     @include('menu_header')
 
-    <div class="container-fluid py-4">
+    <div class="container-fluid py-4 p-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card bg-dark text-white">
                     <div class="card-header bg-dark border-secondary">
                         <h4 class="mb-0">
                             <i class="fas fa-user-plus me-2"></i>
-                            Cadastro de Novo Cliente
+                            Cadastrar novos clientes
                         </h4>
                     </div>
                     <div class="card-body bg-dark">
@@ -20,7 +20,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control bg-dark text-white" id="name"
                                             name="text_name" placeholder="Nome completo">
-                                        <label for="name" class="text-light">Nome completo</label>
+                                        <label for="name">Nome completo</label>
                                         @error('text_name')
                                             <div class="alert alert-danger text-center">{{ $message }}</div>
                                         @enderror
@@ -31,7 +31,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="email" class="form-control bg-dark text-white" id="email"
                                             name="text_email" placeholder="nome@exemplo.com">
-                                        <label for="email" class="text-light">E-mail</label>
+                                        <label for="email">E-mail</label>
                                         @error('text_email')
                                             <div class="alert alert-danger text-center">{{ $message }}</div>
                                         @enderror
@@ -42,7 +42,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="password" class="form-control bg-dark text-white" id="password"
                                             name="text_password" placeholder="Senha">
-                                        <label for="password" class="text-light">Senha</label>
+                                        <label for="password">Senha</label>
                                         @error('text_password')
                                             <div class="alert alert-danger text-center">{{ $message }}</div>
                                         @enderror
@@ -53,7 +53,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="tel" class="form-control bg-dark text-white" id="phone"
                                             name="text_phone" placeholder="(00) 00000-0000">
-                                        <label for="phone" class="text-light">Telefone</label>
+                                        <label for="phone">Telefone</label>
                                         @error('text_phone')
                                             <div class="alert alert-danger text-center">{{ $message }}</div>
                                         @enderror
@@ -64,7 +64,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control bg-dark text-white" id="address"
                                             name="text_address" placeholder="Endereço completo">
-                                        <label for="address" class="text-light">Endereço completo</label>
+                                        <label for="address">Endereço completo</label>
                                         @error('text_address')
                                             <div class="alert alert-danger text-center">{{ $message }}</div>
                                         @enderror
@@ -79,7 +79,7 @@
                                 </a>
                                 <button type="submit" class="btn btn-primary">
                                     <i class="fas fa-save me-2"></i>
-                                    Criar Cliente
+                                    Cadastrar
                                 </button>
                             </div>
                         </form>

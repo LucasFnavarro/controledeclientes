@@ -1,6 +1,5 @@
 @extends('layouts.main_layout')
 @section('content')
-
     @include('menu_header')
 
     <div id="content" class="p-4">

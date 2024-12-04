@@ -45,7 +45,7 @@ class ClientesController extends Controller
         $phone = $request->input('text_phone');
         $address = $request->input('text_address');
 
-
+        dd($request);
         // CONTINUAR A VALIDAÇÃO !!!
         
         

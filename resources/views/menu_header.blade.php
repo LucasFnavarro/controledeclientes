@@ -1,6 +1,6 @@
 <div id="sidebar">
     <div class="logo-container">
-        <span class="menu-text">Sistema de Clientes</span>
+        <span class="menu-text">Controle Clientes</span>
         <span class="collapsed-text" style="display: none;">S</span>
     </div>
     <button id="toggle-btn">
